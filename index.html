@@ -1,100 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>행신중학교 시간표 - Haengshin Times</title>
-        <script src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity = "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin = "anonymous"></script>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>짭미타임즈 짝퉁</title>
+        <script type = "text/javascript" src = "https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity = "sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin = "anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin = "anonymous">
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity = "sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin = "anonymous"></script>
         <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity = "sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin = "anonymous"></script>
         <script src = "https://kit.fontawesome.com/06fb83cb17.js" crossorigin = "anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://potato179.github.io/style/potato-min.css">
+        <link rel = "preconnect" href = "https://fonts.googleapis.com"> 
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin> 
+        <link href = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel = "stylesheet">
+        <link rel = "stylesheet" href = "https://potato179.github.io/style/potato-min.css">
         <style>
             body{
-                font-family: 'Nanum Gothic', sans-serif;        
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+            *{
+                text-align: center;
+                position: relative;
+            }
+            .time{
+                font-size: 125px;
+                font-weight: bold;
+                color: #e80c7a;
             }
         </style>
     </head>
     <body>
-        <main class = "center">
-            <br><br><br><br>
-            <p class = "title gray bold" style = "font-size: 450%; line-height: 100%;">Welcome to</p>
-            <p class = "title gray bold" style = "font-size: 450%; line-height: 100%; color: #72072B">Haengshin Time Table</p>
-            <br><br>
-            <h3 id = "date">오늘날짜</h3>
-            <h3 id = "time">현재시각</h3>
-            <br><br>
-            <a href = "https://hcs.eduro.go.kr/" target = "_blank" class = "btn btn-warning button-next " style = "font-size: 40px;"><span>자가진단 참여하기&nbsp;</span></a>
+        <br><br><br><br><br><br>
+        <main class = "container center">
+            <p class = "bold gray" style = "font-size: 500%; line-height: 100%;">Welcome to</p>
+            <p class = "bold" style = "font-size: 750%; line-height: 100%; color: #E80C7A">Haengshin Times</p>
+            <br><br><br>
+            <button onclick = "window.open('https://hcs.eduro.go.kr')" class = "button-proceed box-gold black" style = "font-size: 30px; width: 75%;"><span><i class = "fas fa-check-circle"></i>&nbsp;자가진단</span></button>
+            <button onclick = "window.open('http://benedu.co.kr')" class = "button-proceed box-gold black" style = "font-size: 30px; width: 75%;"><span><img width = "25px" src = "https://benedu.co.kr/Content/dimigo/images/benedu.png">&nbsp;베네듀</span></button>
+            <button onclick = "window.open('https://book.dimigo.me')" class = "button-proceed box-gold black" style = "font-size: 30px; width: 75%;"><span><i class="fas fa-book"></i>&nbsp;디지털교과서</span></button>
+            <p>* 자동 자가진단 서비스는 지속적인 민원과 보안 문제로 인해 서비스를 종료하였습니다.</p>
+            <br><br><br>
+                        <!--<h3 id = "date">오늘날짜</h3>
+            <h3 id = "time">현재시각</h3>-->
             <br><br><br><br><br><br>
-            <p>아직까지 1, 2학년 시간표는 지원하지 않습니당:(</p>
-            <br><br>
+            <div class = "row g-3" style = "width: 75%; margin: 0 auto;">
+                <div class = "col-md-2"></div>
+                <div class = "col-md-8">
+                    <select class = "form-select" id = "country">
+                        <option value = "G1">1학년</option>
+                        <option value = "G2">2학년</option>
+                        <option value = "G3">3학년</option>
+                    </select>
+                </div>
+                <div class = "col-md-2"></div>
+            </div>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">1반의 오늘의 시간표</div>
             <div id="time1A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time1B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
-            <br><br>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">2반의 오늘의 시간표</div>
             <div id="time2A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time2B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
-            <br><br>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">3반의 오늘의 시간표</div>
             <div id="time3A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time3B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
-            <br><br>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">4반의 오늘의 시간표</div>
             <div id="time4A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time4B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
-            <br><br>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">5반의 오늘의 시간표</div>
             <div id="time5A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time5B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
-            <br><br>
+            <br><br><br>
             <div style="font-size: 40px; color: black;">6반의 오늘의 시간표</div>
             <div id="time6A" style="font-size: 58px;">오늘의 교시가 뜨는 자리입니다!</div>
             <div id="time6B" style="font-size: 50px; color: #BF1F54;">오늘의 시간표가 뜨는 자리입니다!</div>
             <br><br><br><br><br><br>
-            <h4>&copy; 2021 by <a href = "https://www.facebook.com/makerpotato179" target = '_blank'>홍은표</a> and <a href = "https://www.facebook.com/corondev.kimain" target = '_blank'>김아인</a>. <br>본 사이트는 <a href = "https://www.facebook.com/corondev.kimain" target = '_blank'>김아인</a>의 DimiTimes를 표절한 작품입니다. <a href = "https://dimitimes.github.io/" target = '_blank'>(원본 사이트 보러 가기)</a> <br><a href = "https://m.me/makerpotato179" target = '_blank'>사이트 문의하기</a></h4>
-            <br><br>
+            <h4>행신중 학생들을 위해 졸업생 선배가 만들어줬다!</h4>
+            <h4>&copy; 2021~2022 by <a href = "https://www.facebook.com/makerpotato179" target = '_blank'>홍은표</a> and <a href = "https://www.facebook.com/corondev.kimain" target = '_blank'>김아인</a>. <br>본 사이트는 <a href = "https://www.facebook.com/corondev.kimain" target = '_blank'>김아인</a>의 DimiTimes를 표절한 작품입니다. <a href = "https://dimitimes.github.io/" target = '_blank'>(원본 사이트 보러 가기)</a></h4>
+            <p>* 제작: KDMHS 21WP 홍은표</p>
+            <br><br><br>
         </main>
         <script>
-            var sj11 = ["체육", "중어", "과A", "국어", "수학", "사회"]  // 1반 월
-            var sj12 = ["역사", "수학", "과B", "미술", "중어", "영어", "스포"] // 1반 화
-            var sj13 = ["수학", "영어", "역사", "국어", "과A", "체육"] // 1반 수
-            var sj14 = ["과A", "수학", "국어", "중어", "독서", "영A", "창체"] // 1반 목
-            var sj15 = ["영어", "미술", "국어", "음악", "사회", "체육"] // 1반 금
+            var sj11 = ["체육", "도덕", "과학", "사회", "기B", "정보"]  // 1-1반 월
+            var sj12 = ["음악", "기A", "사회", "수학", "스포", "국어", "영어"] // 1-1반 화
+            var sj13 = ["도덕", "과학", "주제", "주제", "정보", "기A"] // 1-1반 수
+            var sj14 = ["국어", "진로", "예체", "예체", "도덕", "독서", "수학"] // 1-1반 목
+            var sj15 = ["국어", "체육", "과학", "영어", "사회", "창체"] // 1-1반 금
 
-            var sj21 = ["역사", "미술", "영어", "사회", "국어", "체육"] // 2반 월
-            var sj22 = ["과B", "체육", "과A", "중어", "영어", "수학", "스포"] // 2반 화
-            var sj23 = ["영A", "역사", "국어", "독서", "중어", "수학"] // 2반 수
-            var sj24 = ["미술", "체육", "수학", "과A", "사회", "국어", "창체"] // 2반 목
-            var sj25 = ["국어", "음악", "과A", "영어", "중어", "수학"] // 2반 금
+            var sj21 = ["진로", "국어", "독서", "도덕", "과학", "사회"] // 1-2반 월
+            var sj22 = ["수학", "과학", "체육", "영어", "스포", "정보", "기B"] // 1-2반 화
+            var sj23 = ["수학", "기A", "주제", "주제", "사회", "정보"] // 1-2반 수
+            var sj24 = ["도덕", "사회", "예체", "예체", "국어", "과학", "체육"] // 1-2반 목
+            var sj25 = ["음악", "기A", "국어", "도덕", "영어", "창체"] // 1-2반 금
 
-            var sj31 = ["국어", "역사", "수학", "영어", "중어", "독서"] // 3반 월
-            var sj32 = ["체육", "국어", "사회", "과B", "수학", "역사", "스포"] // 3반 화
-            var sj33 = ["과A", "수학", "미술", "체육", "영어", "음악"] // 3반 수
-            var sj34 = ["중어", "국어", "사회", "미술", "영어", "과A", "창체"] // 3반 목
-            var sj35 = ["영C", "수학", "체육", "국어", "과A", "중어"] // 3반 금
+            var sj31 = ["독서", "수학", "영어", "음악", "도덕", "과학"] // 1-3반 월
+            var sj32 = ["국어", "진로", "기A", "체육", "스포", "사회", "과학"] // 1-3반 화
+            var sj33 = ["영어", "정보", "주제", "주제", "국어", "도덕"] // 1-3반 수
+            var sj34 = ["과학", "도덕", "예체", "예체", "사회", "체육", "기B"] // 1-3반 목
+            var sj35 = ["사회", "정보", "기A", "수학", "국어", "창체"] // 1-3반 금
 
-            var sj41 = ["일어", "국어", "체육", "미술", "역사", "수학"] // 4반 월
-            var sj42 = ["사회", "영C", "영어", "체육", "국어", "과B", "스포"] // 4반 화
-            var sj43 = ["일어", "일어", "수학", "과A", "독서", "국어"] // 4반 수
-            var sj44 = ["음악", "영어", "과A", "체육", "국어", "수학", "창체"] // 4반 목
-            var sj45 = ["사회", "과A", "영어", "역사", "수학", "미술"] // 4반 금
+            var sj41 = ["도덕", "정보", "음악", "수학", "국어", "기A"] // 1-4반 월
+            var sj42 = ["사회", "체육", "기B", "과학", "스포", "영어", "국어"] // 1-4반 화
+            var sj43 = ["사회", "도덕", "예체", "예체", "과학", "국어"] // 1-4반 수
+            var sj44 = ["진로", "과학", "주제", "주제", "독서", "도덕", "영어"] // 1-4반 목
+            var sj45 = ["정보", "수학", "체육", "사회", "기가", "창체"] // 1-4반 금
 
-            var sj51 = ["수학", "일어", "일어", "체육", "과A", "국어"] // 5반 월
-            var sj52 = ["미술", "영어", "수학", "국어", "역사", "사회", "스포"] // 5반 화
-            var sj53 = ["체육", "과A", "일어", "영어", "수학", "역사"] // 5반 수
-            var sj54 = ["체육", "독서", "영어", "음악", "국어", "과B", "창체"] // 5반 목
-            var sj55 = ["수학", "사회", "국어", "영C", "미술", "과A"] // 5반 금
+            var sj51 = ["국어", "기B", "사회", "기A", "영어", "체육"] // 1-5반 월
+            var sj52 = ["진로", "도덕", "수학", "국어", "스포", "과학", "정보"] // 1-5반 화
+            var sj53 = ["과학", "독서", "예체", "예체", "도덕", "음악"] // 1-5반 수
+            var sj54 = ["영어", "국어", "주제", "주제", "과학", "사회", "기A"] // 1-5반 목
+            var sj55 = ["수학", "사회", "도덕", "체육", "정보", "창체"] // 1-5반 금
 
-            var sj61 = ["2학년", "학생들을", "위해", "준비", "중입니다.", "^^"] // 6반 월
-            var sj62 = ["2학년", "학생들을", "위해", "준비", "중입니다.", "^^", ""]
-            var sj63 = ["2학년", "학생들을", "위해", "준비", "중입니다.", "^^"]
-            var sj64 = ["2학년", "학생들을", "위해", "준비", "중입니다.", "^^", ""]
-            var sj65 = ["2학년", "학생들을", "위해", "준비", "중입니다.", "^^"]
+            var sj61 = ["도덕", "과학", "기B", "정보", "체육", "영어"] // 1-6반 월
+            var sj62 = ["과학", "국어", "음악", "사회", "스포", "독서", "수학"]
+            var sj63 = ["도덕", "국어", "예체", "예체", "기가", "사회"]
+            var sj64 = ["사회", "기B", "주제", "주제", "진로", "수학", "국어"]
+            var sj65 = ["체육", "영어", "도덕", "정보", "과학", "창체"]
 
             var today = new Date();
             var day = today.getDay();
